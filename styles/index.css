@@ -1,6 +1,6 @@
 section > img {
-  width: 22rem;
-  border-radius: 20px;
+  width: 20rem;
+  border-radius: 100px;
 }
 
 * {
@@ -12,7 +12,7 @@ section > img {
 body {
   background-color: aqua;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 header, nav, footer {
@@ -26,7 +26,7 @@ nav {
 }
 
 nav ul {
-    background-color: grey;
+    background-color: *;
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -38,9 +38,13 @@ header {
     text-align: center;
 }
 
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
 nav li {
-    background-color: brown;
-    padding: 5rem;
+
 } 
 
 header,
@@ -54,4 +58,17 @@ footer {
 
 nav li {
     font-size: 2.5rem;
+}
+aside {
+    background-color: rgb(4, 79, 79);
+}
+aside li {
+    list-style: none;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    border: 1px solid black;
+}
+aside li a {
+    text-decoration: none;
+    color: bisque;
 }
