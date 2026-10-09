@@ -11,12 +11,19 @@ section > img {
 
 body{
     background-color: aqua;
+    display:grid;
+    grid-template-columns: 2fr;
 }
 
-header, nav, main, aside, footer {  
-    padding: 2rem;
+header, nav, footer {  
+    grid-column: 1/-1;
 }
 
-nav ul {
-    list-style: none;
+header,
+nav,
+main,
+aside,
+footer {
+
+
 }
